@@ -256,6 +256,33 @@
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
+  .order .product_container1,
+  .order .product_container2 {
+    height: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
+  .order .product_container1 .price-and-info,
+  .order .product_container2 .price-and-info {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: static;
+    margin: 20px;
+  }
+  .order .product_container1 .price-and-info .price_button,
+  .order .product_container2 .price-and-info .price_button {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+  .order .product_container1 .price-and-info .count,
+  .order .product_container2 .price-and-info .count {
+    width: 100%;
+  }
+  .order .img {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 450px) {
