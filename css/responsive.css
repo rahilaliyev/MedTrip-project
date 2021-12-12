@@ -82,6 +82,7 @@
     top: 260px;
     flex-direction: row;
     height: 20%;
+    flex-wrap: wrap;
   }
   .submenu li {
     margin-right: 10px;
@@ -92,18 +93,23 @@
 
   /* PRODUCT PAGE */
 
-  .product-section form {
+  .product-section form,
+  .sanatory-next-page form {
     flex-direction: column;
   }
-  .product-section form .region {
+  .product-section form .region,
+  .sanatory-next-page form .region {
     justify-content: space-between;
     margin: 20px 0;
   }
   .product-section form .region select,
-  .product-section form .region input {
+  .product-section form .region input,
+  .sanatory-next-page form .region select,
+  .sanatory-next-page form .region input {
     margin: 0;
   }
-  .product-section .all-products {
+  .product-section .all-products,
+  .sanatory-next-page .all-products {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 8%;
     row-gap: 80px;
@@ -120,6 +126,25 @@
   }
   .product-details img {
     width: 100%;
+  }
+
+  .d-flex .first-row:first-child {
+    margin-left: 0;
+  }
+  .order-table {
+    flex-direction: column;
+  }
+  .order-table .left-inputs {
+    width: 100%;
+  }
+  .order-table-right,
+  .first-row {
+    width: 100%;
+  }
+  .order-btn,
+  .enter,
+  .email {
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -145,11 +170,6 @@
 @media only screen and (max-width: 600px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .section-slide .my-container {
-    float: none;
-    width: 96%;
   }
 
   .owl-carousel {
@@ -188,22 +208,53 @@
     width: 100%;
   }
 
-  .product-section .all-products {
+  .product-section .all-products,
+  .sanatory-next-page .all-products {
     grid-template-columns: 1fr;
   }
-  .product-section .product {
+  .product-section .product,
+  .sanatory-next-page .product {
     width: 100%;
   }
-  .product-section form .region {
+  .product-section form .region,
+  .sanatory-next-page form .region {
     flex-direction: column;
   }
   .product-section form .region input,
-  .product-section form .region select {
+  .product-section form .region select,
+  .sanatory-next-page form .region select,
+  .sanatory-next-page form .region input {
     width: 100%;
     margin-top: 20px;
   }
-  .product-section form .region {
+  .product-section form .region,
+  .sanatory-next-page form .region {
     margin: 0 0 20px 0;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+  .d-flex .first-row {
+    margin: 0;
+  }
+  .tours-section .project-slide {
+    display: none;
+  }
+  .tours-section .tours-icons {
+    align-items: initial;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .header-animation {
+    width: 100% !important;
+  }
+  .whatsapp,
+  .wrapper {
+    display: none;
+  }
+  .sanatory_section_card > div {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 
@@ -215,13 +266,17 @@
   .section-slide {
     margin-top: 130px;
   }
+  .section-slide .my-container {
+    float: none;
+    width: 96%;
+  }
 
   .section-slide .owl-carousel {
     top: -130px;
   }
 
   .position {
-    padding: 180px 0 0 0;
+    padding: 180px 0 10px 0;
   }
   .paragraph-2 {
     width: 100%;
@@ -274,6 +329,17 @@
   }
   .profile_height button {
     padding: 12px;
+  }
+  .tours-section .btn-right {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .tours-section .tour-button button {
+    width: 100%;
+  }
+  .tour-button {
+    display: flex;
+    flex-direction: column;
   }
 }
 
