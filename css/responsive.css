@@ -83,6 +83,7 @@
     flex-direction: row;
     height: 20%;
     flex-wrap: wrap;
+    background: #fff;
   }
   .submenu li {
     margin-right: 10px;
@@ -113,6 +114,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 8%;
     row-gap: 80px;
+    padding: 15px;
   }
   .user_registration img,
   .about img,

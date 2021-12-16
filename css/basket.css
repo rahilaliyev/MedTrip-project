@@ -486,7 +486,7 @@ footer img {
 .hamburger-line:first-child,
 .hamburger-line:nth-child(2),
 .hamburger-line:last-child {
-  background-color: white;
+  background-color: black;
   height: 10%;
   transition: 0.4s;
   width: 100%;
