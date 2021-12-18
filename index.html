@@ -22,11 +22,22 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>MedTrip</title>
   </head>
   <body>
+    <section class="loader">
+        <lottie-player
+          src="img/loading.json"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 200px"
+          loop
+          autoplay
+        ></lottie-player>
+        <span>Yüklənir...</h2>
+    </section>
     <header>
-
       <div class="header-container">
         <div class="container">
           <nav>
@@ -1081,7 +1092,7 @@
     <script src="js/slide.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script>
       const phoneInputField = document.querySelector("#phone");
