@@ -102,7 +102,8 @@
               Sizin artıq hesabınız varmı? <a href="login.html"> Giriş</a>
             </p>
             <div>
-              <form>
+              <form >
+                <div class="form-box">
                 <input
                   type="text"
                   id="fname"
@@ -110,7 +111,8 @@
                   placeholder="Adınız"
                   class="input"
                   required
-                />
+                /></div>
+                <div class="form-box">
                 <input
                   type="text"
                   id="lname"
@@ -119,14 +121,17 @@
                   class="input"
                   required
                 />
-                <input
-                  type="e-mail"
-                  id="lname"
+              </div>
+              <div class="form-box">   <input
+                  type="email"
+                  id="email"
                   name="email"
                   placeholder="E-mailiniz"
                   class="input"
                   required
                 />
+              </div>
+              <div class="form-box"> 
                 <input
                   type="tel"
                   name="phone"
@@ -135,28 +140,40 @@
                   class="input"
                   required
                 />
+              </div>
+              <div class="form-box password-input-box">
                 <input
                   type="password"
-                  id="lname"
-                  name="lastname"
+                  id="password"
+                  name="password"
                   placeholder="Şifrəniz"
-                  class="input"
+                  class="input  password-input"
                   required
                 />
+                <span class="eyes">
+                  <i class="fas fa-eye-slash" id="eye-close" onclick="inputClose()"></i>
+                  <i class="fas fa-eye" id="eye-open" onclick="inputOpen()"></i>
+                </span>
+              </div>
+              <div class="form-box"> 
                 <input
                   type="password"
-                  id="lname"
-                  name="lastname"
+                  id="confirmPassword"
+                  name="confirmPassword"
                   placeholder="Şifrənizi təsdiqləyin"
                   class="input"
                   required
                 />
+              </div> 
+              <div class="form-box">
                 <select name="catogory" required>
                   <option value="">Ölkənizi seçin</option>
                   <option value="azərbaycan">Azərbaycan</option>
                   <option value="usa">USA</option>
                   <option value="canada">Canada</option>
                 </select>
+              </div>
+              <div class="form-box"> 
                 <div class="form-check">
                   <input
                     class="form-check-input"
@@ -169,6 +186,7 @@
                     <span class="modal-btn">Qaydalarla</span> tanış oldum
                   </label>
                 </div>
+              </div>
 
                 <div class="modal-bg">
                   <div class="modal">
@@ -256,7 +274,9 @@
         </div>
       </div>
     </footer>
+       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <script>
       const phoneInputField = document.querySelector("#phone");
       const phoneInput = window.intlTelInput(phoneInputField, {

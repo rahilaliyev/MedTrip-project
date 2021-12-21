@@ -259,28 +259,30 @@ input {
   font-size: 16px;
 }
 
-input[type="submit"] {
-  width: 350px;
-  height: 40px;
-  background-color: #0b5ee8;
-  color: white;
-  padding: auto;
-  border: none;
-  border-radius: 8px;
+
+
+.eyes {
+  position: absolute;
+  right: 15px;
+  top: 35%;
   cursor: pointer;
-  font-size: 14px;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
+
+.password-input-box {
+  position: relative;
+}
+
+#eye-close {
+  display: none;
+}
+
 .loginn {
   display: flex;
   justify-content: center;
   place-items: center;
   align-items: center;
 }
-input[type="submit"]:hover {
-  transform: translateY(-3px);
-}
+
 form > p {
   text-align: center;
 }
@@ -324,26 +326,13 @@ input {
   font-size: 16px;
 }
 
-input[type="submit"] {
-  width: 350px;
-  height: 40px;
-  background-color: #0b5ee8;
-  color: white;
-  padding: auto;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-}
 .loginn1 {
   display: flex;
   justify-content: center;
   place-items: center;
   align-items: center;
 }
-input[type="submit"]:hover {
-  transform: translateY(-3px);
-}
+
 
 .user_registration {
   margin-top: 200px;
@@ -378,17 +367,6 @@ input {
   font-size: 16px;
 }
 
-input[type="submit"] {
-  width: 350px;
-  height: 40px;
-  background-color: #0b5ee8;
-  color: white;
-  padding: auto;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-}
 .loginn1 {
   display: flex;
   justify-content: center;
@@ -396,9 +374,7 @@ input[type="submit"] {
   align-items: center;
 }
 
-input[type="submit"]:hover {
-  transform: translateY(-3px);
-}
+
 
 .login1 > h2 {
   text-align: center;
@@ -487,6 +463,8 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .completed1 {
   display: flex;
