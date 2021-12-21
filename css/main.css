@@ -431,6 +431,7 @@ footer .row .col-4:last-child {
 }
 
 .whatsapp {
+  display: none;
   position: fixed;
   left: 30px;
   bottom: 250px;
@@ -590,11 +591,6 @@ footer .row .col-4:last-child {
 .profile_height input {
   border: 1px solid rgba(0, 0, 0, 0.32);
   border-radius: 4px;
-}
-
-.profile_height .row input,
-.iti {
-  margin-bottom: 30px;
 }
 
 .profile_height .password {
