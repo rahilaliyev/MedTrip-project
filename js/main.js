@@ -10,10 +10,10 @@ hamburgerMenu.addEventListener("click", () => {
 
 /// LOADING
 
-window.addEventListener("load", function () {
-  const loader = document.querySelector(".loader");
+const loader = document.querySelector(".loader");
+setTimeout(() => {
   loader.style.display = "none";
-});
+}, 3000);
 
 // SCROLL ICON
 
